@@ -133,8 +133,8 @@ instance Monad ZuriList where
 
 -- Note: readfile imported automatically by prelude
 
--- doSomeIO = do
---     fileContents <- readfile "bla.txt"
---     putStrLn fileContents
---     let firstCharacter = head fileContents
---     return firstCharacter
+doSomeIO = do
+    fileContents <- readFile "bla.txt"
+    putStrLn fileContents
+    let firstCharacter = head fileContents
+    return firstCharacter
